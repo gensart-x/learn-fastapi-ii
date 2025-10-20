@@ -12,6 +12,9 @@ def create_app():
         
         redirect_slashes=True,
         openapi_url="/openapi-contract.json",
+        openapi_tags=[
+            {'name': '👤 Users', 'description': 'User related endpoints.'}
+        ],
         lifespan=lifespan
     )
     
